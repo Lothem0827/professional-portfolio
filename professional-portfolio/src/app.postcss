@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    sborder: solid red 1px;
+  }
+  ::selection {
+    background: #8cfb1c;
+  }
+  html {
+    font-family: Inter;
+    letter-spacing: -0.04em;
+  }
+  body {
+    background-color: #121212;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    sborder: solid red 1px;
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/Inter.ttf");
+  }
+  @font-face {
+    font-family: "Monument";
+    src: url("./assets/fonts/Monument.ttf");
+  }
+}
+
+@layer components {
+  h1 {
+    @apply font-monument text-1v leading-heading;
+  }
+  h2 {
+    @apply font-monument text-7s leading-heading;
+  }
+  h3 {
+    @apply font-monument text-6s leading-heading;
+  }
+  h4 {
+    @apply font-monument text-6s leading-heading;
+  }
+  .section-container {
+    @apply p-7s h-full rounded-3xl;
+  }
+  .section-wrapper {
+    @apply p-5s h-screen;
+  }
+}
